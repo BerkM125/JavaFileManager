@@ -74,8 +74,8 @@ public class fileManager {
         for(String str : directoryList) {
             params.processParameters(false);
             try {
-                Path temp = Files.move(Paths.get(dir.fdirectory.getPath()+"//"+str),
-                                Paths.get(dir.fdirectory.getPath()+"//"+params.getCorrespondingParam(str)+"//"+str));
+                Path temp = Files.move(Paths.get(dir.fdirectory.getPath() + "//" + str),
+                        Paths.get(dir.fdirectory.getPath() + "//" + params.getCorrespondingParam(str) + "//" + str));
             } catch (IOException e) {
                 e.printStackTrace();
             }
